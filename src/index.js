@@ -8,22 +8,23 @@ import Cookies from "./panels/Cookies";
 import fetch2 from "./components/Fetch";
 
 fetch2("sign").then((data) => {
-  if (data.result === "ok") {
-    try {
-      localStorage.setItem("test", "test");
-      localStorage.clear();
-      bridge.send("VKWebAppInit");
-      ReactDOM.render(<App />, document.getElementById("root"));
-      if (process.env.NODE_ENV === "development") {
-        import("./eruda").then(({ default: eruda }) => {});
-      }
-    } catch {
-      ReactDOM.render(<Cookies />, document.getElementById("root"));
-    }
-  } else {
-    ReactDOM.render(
-      "Неверная подпись параметров запуска.",
-      document.getElementById("root")
-    );
-  }
+	if (data.result === "ok") {
+		try {
+			localStorage.setItem("test", "test");
+			localStorage.clear();
+			bridge.send("VKWebAppInit");
+
+			ReactDOM.render(<App />, document.getElementById("root"));
+			if (process.env.NODE_ENV === "development") {
+				import("./eruda").then(({ default: eruda }) => {});
+			}
+		} catch {
+			ReactDOM.render(<Cookies />, document.getElementById("root"));
+		}
+	} else {
+		ReactDOM.render(
+			"Неверная подпись параметров запуска.",
+			document.getElementById("root")
+		);
+	}
 });

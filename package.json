@@ -1,51 +1,52 @@
 {
-  "name": "links_app",
-  "version": "1.0.0",
-  "description": "Сервис, благодаря которому длинная ссылочка становится короткой. Чистая магия.",
-  "main": "index.js",
-  "scripts": {
-    "start": "cross-env react-scripts start",
-    "build": "react-scripts build -p",
-    "prettier": "npx prettier --write .",
-    "predeploy": "npm run prettier && npm run build",
-    "deploy": "vk-miniapps-deploy"
-  },
-  "keywords": [],
-  "author": "Nikita Balin & Sergey Ushakov",
-  "license": "MIT",
-  "devDependencies": {
-    "cross-env": "^5.2.1",
-    "prettier": "2.2.1",
-    "react-scripts": "^4.0.1",
-    "uglify-js-brunch": "^2.10.0"
-  },
-  "dependencies": {
-    "@vkontakte/icons": "^1.91.0",
-    "@vkontakte/vk-bridge": "^2.4.1",
-    "@vkontakte/vk-miniapps-deploy": "^0.0.17",
-    "@vkontakte/vkjs": "^0.20.0",
-    "@vkontakte/vkui": "^4.2.1",
-    "core-js": "^3.8.3",
-    "eruda": "^2.4.1",
-    "eruda-code": "^2.0.0",
-    "eruda-dom": "^2.0.0",
-    "prop-types": "^15.7.2",
-    "punycode": "^2.1.1",
-    "query-string": "^4.3.4",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-icons": "^4.2.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "links_app",
+	"version": "1.0.0",
+	"description": "Сервис, благодаря которому длинная ссылочка становится короткой. Чистая магия.",
+	"main": "index.js",
+	"homepage": "./",
+	"scripts": {
+		"start": "export SET NODE_OPTIONS=--openssl-legacy-provider && cross-env react-scripts start",
+		"build": "export SET NODE_OPTIONS=--openssl-legacy-provider && react-scripts build -p",
+		"prettier": "npx prettier --write .",
+		"predeploy": "npm run prettier && npm run build",
+		"deploy": "vk-miniapps-deploy"
+	},
+	"keywords": [],
+	"author": "Nikita Balin & Sergey Ushakov",
+	"license": "MIT",
+	"devDependencies": {
+		"cross-env": "^5.2.1",
+		"prettier": "2.2.1",
+		"react-scripts": "^4.0.1",
+		"uglify-js-brunch": "^2.10.0"
+	},
+	"dependencies": {
+		"@vkontakte/icons": "^1.91.0",
+		"@vkontakte/vk-bridge": "^2.4.1",
+		"@vkontakte/vk-miniapps-deploy": "^0.0.17",
+		"@vkontakte/vkjs": "^0.20.0",
+		"@vkontakte/vkui": "^4.2.1",
+		"core-js": "^3.8.3",
+		"eruda": "^2.4.1",
+		"eruda-code": "^2.0.0",
+		"eruda-dom": "^2.0.0",
+		"prop-types": "^15.7.2",
+		"punycode": "^2.1.1",
+		"query-string": "^4.3.4",
+		"react": "^16.14.0",
+		"react-dom": "^16.14.0",
+		"react-icons": "^4.2.0"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
 }
