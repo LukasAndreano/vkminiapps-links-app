@@ -728,6 +728,7 @@ class Home extends React.Component {
 										<Button
 											size="l"
 											stretched
+											type={"submit"}
 											onClick={() => {
 												this.props.blockButton();
 											}}
