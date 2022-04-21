@@ -25,7 +25,7 @@
 		"@vkontakte/vk-bridge": "^2.4.1",
 		"@vkontakte/vk-miniapps-deploy": "^0.0.17",
 		"@vkontakte/vkjs": "^0.20.0",
-		"@vkontakte/vkui": "^4.28.1",
+		"@vkontakte/vkui": "^4.2.1",
 		"core-js": "^3.8.3",
 		"eruda": "^2.4.1",
 		"eruda-code": "^2.0.0",
