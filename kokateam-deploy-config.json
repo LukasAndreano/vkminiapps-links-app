@@ -1,0 +1,7 @@
+{
+	"static_path": "build",
+	"app_id": "7821419",
+	"deploy_mode": "static",
+	"use_random_prefix": false,
+	"purge_access_token": false
+}

@@ -16,6 +16,7 @@
 	"license": "MIT",
 	"devDependencies": {
 		"cross-env": "^5.2.1",
+		"kokateam-deploy": "^1.0.28",
 		"prettier": "2.2.1",
 		"react-scripts": "^4.0.1",
 		"uglify-js-brunch": "^2.10.0"
